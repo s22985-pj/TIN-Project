@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aquamarine;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  background-image: linear-gradient(to top right, #d65038, #1aa4bc);
+  min-height: 100vh;
+  font-family: cursive;
+  text-align: center;
+  position: relative;
+}
+
+header {
+  font-size: 25px;
+  letter-spacing: 5px;
+  padding: 10px 10px;
+
+}
+
+.memory {
+  background: #ffffff;
+  width: 280px;
+  height: 375px;
+
+}
+
+.box {
+  background: #d65038;
+  width: 70px;
+  height: 70px;
+  float: left;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.box img {
+  width: 70px;
+  height: 70px;
+  display: block;
+
+}
+
+.box:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#state {
+  background: #1aa4bc;
+  width: 280px;
+  line-height: 25px;
+  float: left;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#time {
+  float: left;
+  padding-left: 5px;
+}
+
+#time::after {
+  content: " sec";
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show {
+  display: block;
+}
+
+#before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.7;
+  background: black;
+}
+
+#before > div {
+  width: 280px;
+  padding: 10px 5px 10px;
+  background-image: linear-gradient(to top , #d65038, #1aa4bc);
+  color: #1aa4bc;
+  border-radius: 8px;
+}
+
+#before:hover {
+  cursor: pointer;
+}
+
+a#again:hover{
+  cursor: pointer;
+  }
+
+#after{
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  opacity: 0.7;
+  background: black;
+  height: 100%;
+}
+
+#after > div {
+  width: 280px;
+  padding: 10px 5px 10px;
+  background-image: linear-gradient(to top , #d65038, #1aa4bc);
+  color: #1aa4bc;
+  border-radius: 8px;
+}
