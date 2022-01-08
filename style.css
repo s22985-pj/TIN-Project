@@ -126,7 +126,7 @@ a#again:hover{
 #after > div {
   width: 280px;
   padding: 10px 5px 10px;
-  background-image: linear-gradient(to top , #d65038, #1aa4bc);
+  background-image: linear-gradient(to top , #430808, #2d4343);
   color: #1aa4bc;
   border-radius: 8px;
 }
