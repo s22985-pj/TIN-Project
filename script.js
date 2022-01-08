@@ -55,7 +55,7 @@ function addThemes(theme) {
     for (let i=0; i<20; i++) {images.push(library[theme][i]);}
 
     for (let i=0; i<20; i++) {
-        var x = Math.floor(Math.random() * (images.length -1));
+        var x = Math.floor(Math.random() * (images.length ));
         boxV[i].innerHTML = "<img src='"+images[x]+"'alt='image' class='hidden'>";
         images.splice(x, 1);
     }
